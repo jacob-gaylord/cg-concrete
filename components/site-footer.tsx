@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Instagram, Twitter, Mail } from "lucide-react"
+import { Facebook, Twitter, Mail } from "lucide-react"
 import Image from "next/image"
 
 export function SiteFooter() {
@@ -13,7 +13,7 @@ export function SiteFooter() {
             <span className="text-heading-sm font-bold">Cottage Grove Concrete, LLC</span>
           </Link>
           <p className="text-body-md text-gray-500 ml-1">
-            Quality concrete solutions for residential and commercial projects. Serving the community since 2005.
+            Quality concrete solutions for residential and commercial projects. Serving the community since 2007.
           </p>
         </div>
 
@@ -48,15 +48,11 @@ export function SiteFooter() {
           <div className="space-y-3">
             <h3 className="text-body-md font-medium">Connect</h3>
             <div className="flex space-x-3">
-              <Link href="#" className="text-gray-500 hover:text-gray-900">
+              <Link href="https://www.facebook.com/share/1BmxGDHnxj/?mibextid=wwXIfr" className="text-gray-500 hover:text-gray-900">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-gray-900">
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
-              </Link>
-              <Link href="mailto:info@cottagegroveconcrete.com" className="text-gray-500 hover:text-gray-900">
+              <Link href="mailto:cgconcretemn.com" className="text-gray-500 hover:text-gray-900">
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
               </Link>

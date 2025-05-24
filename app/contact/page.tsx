@@ -217,7 +217,7 @@ export default function ContactPage() {
                   <Mail className="h-5 w-5 text-gray-500" />
                   <div>
                     <div className="font-medium text-body-md">Email</div>
-                    <div className="text-gray-500 text-body-sm">info@cottagegroveconcrete.com</div>
+                    <div className="text-gray-500 text-body-sm">cgconcretemn.com</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
