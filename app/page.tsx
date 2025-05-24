@@ -11,8 +11,8 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[80vh] w-full">
         <Image
-          src="/images/grey_stamped_wood_plank_patio_dark_stone_border_fence_view_02.jpeg"
-          alt="Stamped wood plank patio with dark stone border near fence, showcasing premium outdoor living space"
+          src="/images/brown_stamped_flagstone_patio_under_deck_dark_border_01.jpeg"
+          alt="Brown stamped flagstone patio with decorative border under deck, showcasing premium outdoor living space"
           fill
           priority
           className="object-cover brightness-[0.7]"

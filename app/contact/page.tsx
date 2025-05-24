@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import emailjs from '@emailjs/browser'
 import { MapPin, Phone, Mail, Clock, Upload } from "lucide-react"
@@ -15,7 +15,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { toast } from "@/components/ui/use-toast"
 
-export default function ContactPage() {
+function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [fileName, setFileName] = useState("")
   const [message, setMessage] = useState("")
@@ -112,6 +112,74 @@ Additional details about my project:
   }
 
   return (
+    <Card>
+      <CardHeader>
+        <CardTitle className="text-heading-md">Send us a message</CardTitle>
+        <CardDescription className="text-body-md">
+          Fill out the form below and we'll get back to you as soon as possible.
+        </CardDescription>
+      </CardHeader>
+      <CardContent>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="space-y-2">
+            <label htmlFor="name" className="text-body-md font-medium">
+              Name
+            </label>
+            <Input id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div className="space-y-2">
+            <label htmlFor="email" className="text-body-md font-medium">
+              Email
+            </label>
+            <Input id="email" name="email" type="email" placeholder="Your email" required />
+          </div>
+          <div className="space-y-2">
+            <label htmlFor="phone" className="text-body-md font-medium">
+              Phone
+            </label>
+            <Input id="phone" name="phone" type="tel" placeholder="Your phone number" required />
+          </div>
+          <div className="space-y-2">
+            <label htmlFor="message" className="text-body-md font-medium">
+              Message
+            </label>
+            <Textarea 
+              id="message" 
+              name="message"
+              placeholder="Tell us about your project" 
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required 
+              rows={8}
+            />
+          </div>
+          <div className="space-y-2">
+            <label htmlFor="file" className="text-body-md font-medium">
+              Upload Project Reference (optional)
+            </label>
+            <div className="flex items-center gap-2">
+              <Label
+                htmlFor="file"
+                className="flex h-10 w-full cursor-pointer items-center justify-center rounded-md border border-input bg-background px-3 py-2 text-body-md text-muted-foreground ring-offset-background file:border-0 file:bg-transparent file:text-body-md file:font-medium hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                <Upload className="mr-2 h-4 w-4" />
+                {fileName ? fileName : "Choose file..."}
+              </Label>
+              <Input id="file" type="file" className="hidden" onChange={handleFileChange} />
+            </div>
+            <p className="text-body-sm text-gray-500">Accepted file types: JPG, PNG, PDF (Max 5MB)</p>
+          </div>
+          <Button type="submit" className="w-full" disabled={isSubmitting}>
+            {isSubmitting ? "Sending..." : "Send Message"}
+          </Button>
+        </form>
+      </CardContent>
+    </Card>
+  )
+}
+
+export default function ContactPage() {
+  return (
     <main className="flex min-h-screen flex-col">
       {/* Page Title */}
       <section className="w-full pt-12 pb-4">
@@ -163,69 +231,9 @@ Additional details about my project:
             </Card>
 
             {/* Contact Form (now on the right) */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-heading-md">Send us a message</CardTitle>
-                <CardDescription className="text-body-md">
-                  Fill out the form below and we'll get back to you as soon as possible.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-body-md font-medium">
-                      Name
-                    </label>
-                    <Input id="name" name="name" placeholder="Your name" required />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-body-md font-medium">
-                      Email
-                    </label>
-                    <Input id="email" name="email" type="email" placeholder="Your email" required />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="phone" className="text-body-md font-medium">
-                      Phone
-                    </label>
-                    <Input id="phone" name="phone" type="tel" placeholder="Your phone number" required />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="text-body-md font-medium">
-                      Message
-                    </label>
-                    <Textarea 
-                      id="message" 
-                      name="message"
-                      placeholder="Tell us about your project" 
-                      value={message}
-                      onChange={(e) => setMessage(e.target.value)}
-                      required 
-                      rows={8}
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="file" className="text-body-md font-medium">
-                      Upload Project Reference (optional)
-                    </label>
-                    <div className="flex items-center gap-2">
-                      <Label
-                        htmlFor="file"
-                        className="flex h-10 w-full cursor-pointer items-center justify-center rounded-md border border-input bg-background px-3 py-2 text-body-md text-muted-foreground ring-offset-background file:border-0 file:bg-transparent file:text-body-md file:font-medium hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      >
-                        <Upload className="mr-2 h-4 w-4" />
-                        {fileName ? fileName : "Choose file..."}
-                      </Label>
-                      <Input id="file" type="file" className="hidden" onChange={handleFileChange} />
-                    </div>
-                    <p className="text-body-sm text-gray-500">Accepted file types: JPG, PNG, PDF (Max 5MB)</p>
-                  </div>
-                  <Button type="submit" className="w-full" disabled={isSubmitting}>
-                    {isSubmitting ? "Sending..." : "Send Message"}
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+            <Suspense fallback={<div>Loading contact form...</div>}>
+              <ContactForm />
+            </Suspense>
           </div>
         </div>
       </section>

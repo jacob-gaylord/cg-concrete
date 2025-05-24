@@ -87,6 +87,186 @@ export default function GalleryPage() {
         title: "Ashlar Slate Border", 
         description: "Tan stamped ashlar slate patio with dark stamped border." 
       },
+      { 
+        image: "/images/brown_stamped_flagstone_patio_under_deck_dark_border_01.jpeg", 
+        title: "Under Deck Flagstone Patio", 
+        description: "Brown stamped flagstone patio with decorative border under deck." 
+      },
+      { 
+        image: "/images/charcoal_stamped_ashlar_slate_patio_dark_border_under_deck_posts_01.jpeg", 
+        title: "Under Deck Ashlar Slate", 
+        description: "Charcoal stamped ashlar slate patio with decorative border under deck posts." 
+      },
+      { 
+        image: "/images/charcoal_stamped_wood_plank_ashlar_slate_patio_dark_border_house_view_01.jpeg", 
+        title: "Mixed Pattern Patio", 
+        description: "Charcoal stamped wood plank and ashlar slate patio with decorative border." 
+      },
+      { 
+        image: "/images/charcoal_stamped_wood_plank_circular_patio_compass_rose_inlay_01.jpeg", 
+        title: "Circular Compass Rose Patio", 
+        description: "Charcoal stamped wood plank circular patio with compass rose inlay." 
+      },
+      { 
+        image: "/images/charcoal_stamped_wood_plank_curved_patio_edge_or_wall_cap_angle_view_02.jpeg", 
+        title: "Curved Edge Detail", 
+        description: "Charcoal stamped wood plank patio with curved design edge detail." 
+      },
+      { 
+        image: "/images/charcoal_stamped_wood_plank_patio_compass_rose_inlay_closeup_yellow_markers_01.jpeg", 
+        title: "Compass Rose Closeup", 
+        description: "Close-up of charcoal stamped wood plank patio with compass rose inlay." 
+      },
+      { 
+        image: "/images/charcoal_stamped_wood_plank_patio_compass_rose_inlay_house_view_01.jpeg", 
+        title: "Compass Rose House View", 
+        description: "Charcoal stamped wood plank patio with compass rose inlay from house." 
+      },
+      { 
+        image: "/images/charcoal_stamped_wood_plank_patio_compass_rose_inlay_wet_look_yellow_markers_01.jpeg", 
+        title: "Wet Look Compass Rose", 
+        description: "Charcoal stamped wood plank patio with compass rose inlay, wet finish." 
+      },
+      { 
+        image: "/images/charcoal_stamped_wood_plank_patio_curved_border_house_side_view_01.jpeg", 
+        title: "House Side Curved Border", 
+        description: "Charcoal stamped wood plank patio with curved design and decorative border." 
+      },
+      { 
+        image: "/images/charcoal_stamped_wood_plank_patio_dark_border_angle_view_01.jpeg", 
+        title: "Angled View Patio", 
+        description: "Charcoal stamped wood plank patio with decorative border, angled perspective." 
+      },
+      { 
+        image: "/images/charcoal_stamped_wood_plank_patio_dark_border_under_deck_corner_01.jpeg", 
+        title: "Under Deck Corner", 
+        description: "Charcoal stamped wood plank patio with decorative border under deck corner." 
+      },
+      { 
+        image: "/images/charcoal_stamped_wood_plank_patio_dark_border_under_deck_overview_01.jpeg", 
+        title: "Under Deck Overview", 
+        description: "Overview of charcoal stamped wood plank patio with decorative border under deck." 
+      },
+      { 
+        image: "/images/charcoal_stamped_wood_plank_patio_under_deck_curved_border_01.jpeg", 
+        title: "Under Deck Curved Design", 
+        description: "Charcoal stamped wood plank patio with curved design and decorative border under deck." 
+      },
+      { 
+        image: "/images/grey_brown_stamped_flagstone_patio_under_deck_dark_border_01.jpeg", 
+        title: "Grey Brown Flagstone", 
+        description: "Grey brown stamped flagstone patio with decorative border under deck." 
+      },
+      { 
+        image: "/images/grey_brown_stamped_random_stone_patio_under_deck_dark_border_02.jpeg", 
+        title: "Random Stone Under Deck", 
+        description: "Grey brown stamped random stone patio with decorative border under deck." 
+      },
+      { 
+        image: "/images/grey_stamped_ashlar_slate_patio_dark_border_wet_look_corner_view_01.jpeg", 
+        title: "Wet Look Corner View", 
+        description: "Grey stamped ashlar slate patio with decorative border, wet finish corner view." 
+      },
+      { 
+        image: "/images/grey_stamped_ashlar_slate_patio_dark_border_wet_look_overview_01.jpeg", 
+        title: "Wet Look Overview", 
+        description: "Grey stamped ashlar slate patio with decorative border, wet finish overview." 
+      },
+      { 
+        image: "/images/grey_stamped_ashlar_slate_patio_dark_border_wet_look_overview_02.jpeg", 
+        title: "Wet Look Detail", 
+        description: "Grey stamped ashlar slate patio with decorative border, wet finish detail." 
+      },
+      { 
+        image: "/images/grey_stamped_ashlar_slate_patio_dark_border_wet_look_side_view_01.jpeg", 
+        title: "Wet Look Side View", 
+        description: "Grey stamped ashlar slate patio with decorative border, wet finish side view." 
+      },
+      { 
+        image: "/images/grey_stamped_ashlar_slate_patio_under_deck_01.jpeg", 
+        title: "Grey Ashlar Under Deck", 
+        description: "Grey stamped ashlar slate patio under deck installation." 
+      },
+      { 
+        image: "/images/grey_stamped_concrete_patio_under_deck_curved_border_stairs_01.jpeg", 
+        title: "Under Deck with Stairs", 
+        description: "Grey stamped concrete patio with curved design and decorative border under deck with stairs." 
+      },
+      { 
+        image: "/images/grey_stamped_wood_plank_patio_compass_rose_inlay_red_white_closeup_01.jpeg", 
+        title: "Red White Compass Rose", 
+        description: "Grey stamped wood plank patio with red and white compass rose inlay closeup." 
+      },
+      { 
+        image: "/images/light_grey_broom_finish_patio_new_pour_large_expanse_01.jpeg", 
+        title: "Large Light Grey Patio", 
+        description: "Light grey broom finish patio, fresh pour large expanse." 
+      },
+      { 
+        image: "/images/light_grey_broom_finish_patio_saw_cuts_picture_frame_border_01.jpeg", 
+        title: "Picture Frame Border", 
+        description: "Light grey broom finish patio with saw cuts and picture frame border." 
+      },
+      { 
+        image: "/images/light_grey_broom_finish_patio_saw_cuts_picture_frame_border_angle_view_01.jpeg", 
+        title: "Picture Frame Angle View", 
+        description: "Light grey broom finish patio with picture frame border, angled view." 
+      },
+      { 
+        image: "/images/light_grey_broom_finish_patio_saw_cuts_picture_frame_border_house_view_01.jpeg", 
+        title: "Picture Frame House View", 
+        description: "Light grey broom finish patio with picture frame border from house." 
+      },
+      { 
+        image: "/images/light_grey_concrete_compass_rose_inlay_blue_white_saw_cuts_closeup_01.jpeg", 
+        title: "Blue White Compass Rose", 
+        description: "Light grey concrete with blue and white compass rose inlay closeup." 
+      },
+      { 
+        image: "/images/tan_broom_finish_patio_saw_cuts_dark_stamped_border_02.jpeg", 
+        title: "Tan Broom Finish Detail", 
+        description: "Tan broom finish patio with saw cuts and decorative stamped border." 
+      },
+      { 
+        image: "/images/tan_broom_finish_patio_saw_cuts_dark_stamped_border_house_deck_view_01.jpeg", 
+        title: "Deck View Tan Patio", 
+        description: "Tan broom finish patio with decorative border viewed from deck." 
+      },
+      { 
+        image: "/images/tan_broom_finish_patio_saw_cuts_dark_stamped_border_house_deck_view_02.jpeg", 
+        title: "Deck View Detail", 
+        description: "Tan broom finish patio with decorative border, deck view detail." 
+      },
+      { 
+        image: "/images/tan_broom_finish_patio_saw_cuts_dark_stamped_border_house_deck_view_03.jpeg", 
+        title: "Deck View Overview", 
+        description: "Tan broom finish patio with decorative border, deck view overview." 
+      },
+      { 
+        image: "/images/tan_stamped_ashlar_slate_patio_dark_border_under_deck_detail_01.jpeg", 
+        title: "Under Deck Ashlar Detail", 
+        description: "Tan stamped ashlar slate patio with decorative border under deck detail." 
+      },
+      { 
+        image: "/images/tan_stamped_ashlar_slate_patio_dark_border_under_deck_overview_01.jpeg", 
+        title: "Under Deck Ashlar Overview", 
+        description: "Tan stamped ashlar slate patio with decorative border under deck overview." 
+      },
+      { 
+        image: "/images/tan_stamped_flagstone_patio_under_deck_dark_border_02.jpeg", 
+        title: "Tan Flagstone Under Deck", 
+        description: "Tan stamped flagstone patio with decorative border under deck." 
+      },
+      { 
+        image: "/images/tan_stamped_flagstone_patio_under_deck_dark_border_closeup_01.jpeg", 
+        title: "Flagstone Closeup", 
+        description: "Tan stamped flagstone patio with decorative border under deck closeup." 
+      },
+      { 
+        image: "/images/tan_stamped_flagstone_patio_under_deck_wet_look_01.jpeg", 
+        title: "Wet Look Flagstone", 
+        description: "Tan stamped flagstone patio under deck with wet finish." 
+      },
     ],
     "Fire Pits": [
       { 
@@ -123,6 +303,31 @@ export default function GalleryPage() {
         image: "/images/dark_grey_stamped_wood_plank_patio_compass_rose_inlay_closeup_02.jpeg", 
         title: "Compass Rose Detail", 
         description: "Detailed view of compass rose inlay in stamped wood plank patio." 
+      },
+      { 
+        image: "/images/charcoal_stamped_wood_plank_guitar_shape_patio_fire_pit_house_view_02.jpeg", 
+        title: "Guitar Shape House View", 
+        description: "Charcoal stamped wood plank guitar-shaped patio with fire pit from house view." 
+      },
+      { 
+        image: "/images/charcoal_stamped_wood_plank_guitar_shape_patio_fire_pit_overview_01.jpeg", 
+        title: "Guitar Shape Overview", 
+        description: "Complete overview of charcoal stamped wood plank guitar-shaped patio with fire pit." 
+      },
+      { 
+        image: "/images/charcoal_stamped_wood_plank_guitar_shape_patio_fire_pit_shadow_visible_01.jpeg", 
+        title: "Guitar Shape with Shadows", 
+        description: "Charcoal stamped wood plank guitar-shaped patio with fire pit showing natural shadows." 
+      },
+      { 
+        image: "/images/charcoal_stamped_wood_plank_guitar_shape_patio_fire_pit_wide_angle_01.jpeg", 
+        title: "Guitar Shape Wide Angle", 
+        description: "Wide angle view of charcoal stamped wood plank guitar-shaped patio with fire pit." 
+      },
+      { 
+        image: "/images/circular_stamped_concrete_patio_fire_pit_dark_border_new_construction_site_01.jpeg", 
+        title: "New Construction Fire Pit", 
+        description: "Circular stamped concrete patio with fire pit and decorative border at new construction site." 
       },
     ],
     "Steps & Walkways": [
@@ -195,6 +400,41 @@ export default function GalleryPage() {
         image: "/images/charcoal_stamped_wood_plank_retaining_wall_curved_top_01_LOW_QUALITY.jpeg", 
         title: "Curved Top Retaining Wall", 
         description: "Stamped wood plank retaining wall with curved top design." 
+      },
+      { 
+        image: "/images/charcoal_stamped_ashlar_slate_walkway_dark_border_by_stairs_closeup_01.jpeg", 
+        title: "Ashlar Slate Walkway Closeup", 
+        description: "Charcoal stamped ashlar slate walkway with decorative border by stairs closeup." 
+      },
+      { 
+        image: "/images/charcoal_stamped_ashlar_slate_walkway_dark_border_by_stairs_hose_visible_01.jpeg", 
+        title: "Ashlar Slate by Stairs", 
+        description: "Charcoal stamped ashlar slate walkway with decorative border by stairs." 
+      },
+      { 
+        image: "/images/curved_stamped_concrete_steps_textured_stone_leading_to_patio_01.jpeg", 
+        title: "Curved Steps to Patio", 
+        description: "Curved stamped concrete steps with textured stone leading to patio." 
+      },
+      { 
+        image: "/images/stamped_concrete_steps_textured_stone_broom_finish_patio_overview_01.jpeg", 
+        title: "Textured Stone Steps", 
+        description: "Stamped concrete steps with textured stone and broom finish patio overview." 
+      },
+      { 
+        image: "/images/terracotta_concrete_walkway_grey_border_steps_construction_01.jpeg", 
+        title: "Terracotta Walkway Construction", 
+        description: "Terracotta concrete walkway with grey border steps during construction." 
+      },
+      { 
+        image: "/images/terracotta_concrete_walkway_grey_border_steps_construction_02.jpeg", 
+        title: "Terracotta Construction Detail", 
+        description: "Terracotta concrete walkway with grey border steps construction detail." 
+      },
+      { 
+        image: "/images/terracotta_concrete_walkway_grey_border_steps_front_entry_01.jpeg", 
+        title: "Terracotta Front Entry", 
+        description: "Terracotta concrete walkway with grey border steps at front entry." 
       },
     ],
     "Driveways": [
@@ -278,6 +518,31 @@ export default function GalleryPage() {
         title: "Fresh Pour Detail", 
         description: "Detailed view of fresh pour driveway with formed edges." 
       },
+      { 
+        image: "/images/charcoal_stamped_wood_plank_driveway_or_patio_large_expanse_01.jpeg", 
+        title: "Large Stamped Expanse", 
+        description: "Charcoal stamped wood plank driveway or patio large expanse installation." 
+      },
+      { 
+        image: "/images/grey_broom_finish_driveway_caution_tape_street_approach_01.jpeg", 
+        title: "Street Approach", 
+        description: "Grey broom finish driveway with caution tape during street approach construction." 
+      },
+      { 
+        image: "/images/grey_broom_finish_driveway_caution_tape_street_approach_02.jpeg", 
+        title: "Street Approach Detail", 
+        description: "Grey broom finish driveway street approach construction detail." 
+      },
+      { 
+        image: "/images/grey_broom_finish_driveway_fresh_pour_caution_tape_01.jpeg", 
+        title: "Fresh Pour Installation", 
+        description: "Grey broom finish driveway fresh pour with caution tape." 
+      },
+      { 
+        image: "/images/tan_grey_broom_finish_driveway_saw_cuts_caution_tape_street_view_01.jpeg", 
+        title: "Street View Saw Cuts", 
+        description: "Tan grey broom finish driveway with saw cuts and caution tape from street view." 
+      },
     ],
     "Pool Decks": [
       { 
@@ -311,6 +576,11 @@ export default function GalleryPage() {
         image: "/images/grey_broom_finish_patio_large_slab_new_pour_chainlink_fence_01.jpeg", 
         title: "Large Patio Slab", 
         description: "Large grey broom finish patio slab with chainlink fence." 
+      },
+      { 
+        image: "/images/tan_broom_finish_patio_stamped_border_garage_side_01.jpeg", 
+        title: "Garage Side Patio", 
+        description: "Tan broom finish patio with stamped border on garage side." 
       },
     ],
   }
