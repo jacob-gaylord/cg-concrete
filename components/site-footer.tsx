@@ -49,6 +49,10 @@ export function SiteFooter() {
             <h3 className="text-body-md font-medium">Connect</h3>
             <div className="flex space-x-3">
               <Link href="#" className="text-gray-500 hover:text-gray-900">
+                <Facebook className="h-5 w-5" />
+                <span className="sr-only">Facebook</span>
+              </Link>
+              <Link href="#" className="text-gray-500 hover:text-gray-900">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>

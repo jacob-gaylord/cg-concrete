@@ -597,9 +597,9 @@ export default function GalleryPage() {
         </div>
         
         <Tabs defaultValue="Patios" className="w-full">
-          <TabsList className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+          <TabsList className="flex flex-wrap justify-center gap-2 mb-8 h-auto p-2 bg-muted">
             {Object.keys(categories).map((category) => (
-              <TabsTrigger key={category} value={category} className="text-body-md">
+              <TabsTrigger key={category} value={category} className="text-body-sm sm:text-body-md whitespace-nowrap px-3 py-2 flex-shrink-0">
                 {category}
               </TabsTrigger>
             ))}
