@@ -9,7 +9,7 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Concrete Company - Premium Concrete Solutions",
+  title: "Cottage Grove Concrete - Premium Concrete Solutions",
   description: "Quality concrete services for residential and commercial projects.",
     generator: 'v0.dev'
 }

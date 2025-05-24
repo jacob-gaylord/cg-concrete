@@ -62,6 +62,28 @@ const config: Config = {
   				ring: 'hsl(var(--sidebar-ring))'
   			}
   		},
+  		fontSize: {
+  			// Display sizes for hero sections
+  			'display-2xl': ['4.5rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }], // 72px
+  			'display-xl': ['3.75rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }], // 60px
+  			'display-lg': ['3rem', { lineHeight: '1.2', letterSpacing: '-0.02em' }], // 48px
+  			
+  			// Heading sizes
+  			'heading-xl': ['2.25rem', { lineHeight: '1.2', letterSpacing: '-0.01em' }], // 36px
+  			'heading-lg': ['1.875rem', { lineHeight: '1.3', letterSpacing: '-0.01em' }], // 30px
+  			'heading-md': ['1.5rem', { lineHeight: '1.3', letterSpacing: '-0.01em' }], // 24px
+  			'heading-sm': ['1.25rem', { lineHeight: '1.4', letterSpacing: '-0.01em' }], // 20px
+  			
+  			// Body text sizes
+  			'body-xl': ['1.125rem', { lineHeight: '1.6' }], // 18px
+  			'body-lg': ['1rem', { lineHeight: '1.6' }], // 16px
+  			'body-md': ['0.875rem', { lineHeight: '1.5' }], // 14px
+  			'body-sm': ['0.75rem', { lineHeight: '1.5' }], // 12px
+  			
+  			// Caption and small text
+  			'caption': ['0.75rem', { lineHeight: '1.4' }], // 12px
+  			'overline': ['0.75rem', { lineHeight: '1.4', letterSpacing: '0.1em' }], // 12px
+  		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

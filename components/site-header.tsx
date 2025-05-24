@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Menu } from "lucide-react"
+import Image from "next/image"
 
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
@@ -12,22 +13,28 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white">
-      <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="text-xl font-bold tracking-tight">Concrete Company</span>
-        </Link>
-        <nav className="hidden md:flex md:gap-6">
-          <Link href="/" className="text-sm font-medium transition-colors hover:text-gray-900/70">
+      <div className="max-w-7xl mx-auto flex h-16 items-center px-4 md:px-6 relative">
+        {/* Left: Logo */}
+        <div className="flex items-center h-full">
+          <Link href="/" className="flex items-center space-x-2">
+            <Image src="/images/logo.png" alt="Cottage Grove Concrete Logo" height={64} width={64} className="h-16 w-16 object-contain" priority />
+            <span className="text-heading-sm font-bold tracking-tight text-gray-900">Cottage Grove Concrete</span>
+          </Link>
+        </div>
+        {/* Center: Nav */}
+        <nav className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:flex gap-8">
+          <Link href="/" className="text-body-lg font-medium transition-colors hover:text-gray-900/70">
             Home
           </Link>
-          <Link href="/gallery" className="text-sm font-medium transition-colors hover:text-gray-900/70">
+          <Link href="/gallery" className="text-body-lg font-medium transition-colors hover:text-gray-900/70">
             Gallery
           </Link>
-          <Link href="/contact" className="text-sm font-medium transition-colors hover:text-gray-900/70">
+          <Link href="/contact" className="text-body-lg font-medium transition-colors hover:text-gray-900/70">
             Contact
           </Link>
         </nav>
-        <div className="flex items-center gap-4">
+        {/* Right: Button and Mobile Nav */}
+        <div className="flex items-center gap-4 ml-auto">
           <Button asChild className="hidden md:flex">
             <Link href="/contact">Get a Quote</Link>
           </Button>
@@ -42,21 +49,21 @@ export function SiteHeader() {
               <nav className="flex flex-col gap-4">
                 <Link
                   href="/"
-                  className="text-sm font-medium transition-colors hover:text-gray-900/70"
+                  className="text-body-lg font-medium transition-colors hover:text-gray-900/70"
                   onClick={() => setIsOpen(false)}
                 >
                   Home
                 </Link>
                 <Link
                   href="/gallery"
-                  className="text-sm font-medium transition-colors hover:text-gray-900/70"
+                  className="text-body-lg font-medium transition-colors hover:text-gray-900/70"
                   onClick={() => setIsOpen(false)}
                 >
                   Gallery
                 </Link>
                 <Link
                   href="/contact"
-                  className="text-sm font-medium transition-colors hover:text-gray-900/70"
+                  className="text-body-lg font-medium transition-colors hover:text-gray-900/70"
                   onClick={() => setIsOpen(false)}
                 >
                   Contact
