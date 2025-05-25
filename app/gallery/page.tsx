@@ -1,10 +1,34 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
+import { useEffect, useState, Suspense } from "react"
+import { useSearchParams } from "next/navigation"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-export default function GalleryPage() {
+function GalleryContent() {
+  const searchParams = useSearchParams()
+  const [activeTab, setActiveTab] = useState("Patios")
+
+  useEffect(() => {
+    // Check for tab parameter in URL
+    const tab = searchParams.get('tab')
+    if (tab && Object.keys(categories).includes(tab)) {
+      setActiveTab(tab)
+    }
+    
+    // Also check for hash fragment
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash.replace('#', '')
+      const decodedHash = decodeURIComponent(hash)
+      if (decodedHash && Object.keys(categories).includes(decodedHash)) {
+        setActiveTab(decodedHash)
+      }
+    }
+  }, [searchParams])
+
   const categories = {
     "Patios": [
       { 
@@ -596,7 +620,7 @@ export default function GalleryPage() {
           </p>
         </div>
         
-        <Tabs defaultValue="Patios" className="w-full">
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
           <TabsList className="flex flex-wrap justify-center gap-2 mb-8 h-auto p-2 bg-muted">
             {Object.keys(categories).map((category) => (
               <TabsTrigger key={category} value={category} className="text-body-sm sm:text-body-md whitespace-nowrap px-3 py-2 flex-shrink-0">
@@ -637,5 +661,13 @@ export default function GalleryPage() {
         </Tabs>
       </div>
     </main>
+  )
+}
+
+export default function GalleryPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <GalleryContent />
+    </Suspense>
   )
 }

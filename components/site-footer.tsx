@@ -23,22 +23,22 @@ export function SiteFooter() {
           <div className="space-y-3">
             <h3 className="text-body-md font-medium">Services</h3>
             <div className="grid grid-cols-2 gap-x-6 gap-y-2 text-body-md">
-              <Link href="/gallery#Patios" className="text-gray-500 transition-colors hover:text-gray-900">
+              <Link href="/gallery?tab=Patios" className="text-gray-500 transition-colors hover:text-gray-900">
                 Patios
               </Link>
-              <Link href="/gallery#Fire%20Pits" className="text-gray-500 transition-colors hover:text-gray-900">
+              <Link href="/gallery?tab=Fire Pits" className="text-gray-500 transition-colors hover:text-gray-900">
                 Fire Pits
               </Link>
-              <Link href="/gallery#Steps%20%26%20Walkways" className="text-gray-500 transition-colors hover:text-gray-900">
+              <Link href="/gallery?tab=Steps & Walkways" className="text-gray-500 transition-colors hover:text-gray-900">
                 Steps & Walkways
               </Link>
-              <Link href="/gallery#Driveways" className="text-gray-500 transition-colors hover:text-gray-900">
+              <Link href="/gallery?tab=Driveways" className="text-gray-500 transition-colors hover:text-gray-900">
                 Driveways
               </Link>
-              <Link href="/gallery#Pool%20Decks" className="text-gray-500 transition-colors hover:text-gray-900">
+              <Link href="/gallery?tab=Pool Decks" className="text-gray-500 transition-colors hover:text-gray-900">
                 Pool Decks
               </Link>
-              <Link href="/gallery#Floors%20%26%20Foundations" className="text-gray-500 transition-colors hover:text-gray-900">
+              <Link href="/gallery?tab=Floors & Foundations" className="text-gray-500 transition-colors hover:text-gray-900">
                 Floors & Foundations
               </Link>
             </div>
